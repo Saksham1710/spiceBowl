@@ -1,0 +1,206 @@
+/*   Body Styles  */
+html{
+    background-image: url("images/back.png");
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+}
+body{
+    background-color: rgba(219, 219, 219, 0.459);
+    margin-left: auto;
+    margin-right: auto;
+    width: 76%;
+    box-shadow: 0px 0px 100px black;
+}
+header{
+    background-color: rgba(255, 183, 0, 0.8);
+    width: 100%;
+    height: 140px;
+    border: 1px solid black;
+    margin: 0;
+}
+header > img {
+    position: relative;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    font-family: 'Comfortaa', cursive;
+}
+h1{
+    font-family: 'Comfortaa', cursive;
+    padding: 5px 0px 0px 6px;
+    font-size: 40px;
+    color: rgba(255, 183, 0, 0.8);
+}
+li{
+    color: white;
+    font-size: large;
+    padding: 10px 20px 10px 20px;
+    
+}
+article{
+    background-color: white;
+    height: auto;
+    margin: 0px 10px 10px 10px;
+    padding: 0;
+}
+
+
+
+
+/*   Fieldset Styles   */
+form.spicebowl{
+    display: flex;
+    flex-flow: row wrap;
+}
+fieldset.fieldset{
+    background-color: rgb(241, 232, 181);
+       border-radius: 20px;
+       flex: 1 1 40%;
+       font-size: 0.85em;
+       padding: 10px;
+       margin: 10px;
+       
+}
+
+legend{
+    background-color: rgba(247, 173, 35, 0.961);
+    color: white;
+    padding: 2px 4px 2px 4px;
+}
+div.formRow{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 7px 0px;
+}
+div.formRow > * {
+    flex: 1 1 140px;
+}
+div.formRow > input#dineout {
+    flex:  0 0 50px;
+}
+textarea {
+    margin-top: 10px;
+    height: 120px;
+    width: 95%;
+}
+
+
+
+
+
+/*   Button Styles   */
+div.buttons {
+    text-align: center;
+    width: 100%;
+ }
+ input[type='submit'], input[type='reset'] {
+    font-size: 1.2em;
+    padding: 5px;
+    margin: 15px;
+ }
+
+
+
+ /*   Table Styles   */
+ h3.caption{
+     font-size: 1.2em;
+     letter-spacing: 3px;
+     text-align: center;
+     font-family: 'Comfortaa', cursive;
+     color: rgba(12, 12, 12,0.8);padding-bottom: 10px;
+ }
+ table{
+     border: 4px double rgba(177, 58, 2, 1);
+     border-collapse: collapse;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 25px;
+ }
+ tr{
+     border: 1px solid rgba(128, 128, 128, 0.267);
+ }
+ th{
+    border: 1px solid rgba(128, 128, 128, 0.267);
+    padding: 2px 0px 15px 2px;
+    width: 120px;
+    
+    
+ }
+ th.dayRow{
+     background-color: rgb(154,64,3);
+     color: white;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ th.jan , th.feb{
+     text-align: start;
+     color: blue;
+ }
+ th.feb {
+     background-color: rgba(232, 214, 148, 0.6);
+     box-shadow: 0px 0px 20px grey inset;
+ }
+p.vDay {
+    text-align: start;
+}
+ 
+
+
+/*   Footer styles   */
+footer{
+    background-color: rgba(167, 79, 21, 0.931);
+    text-align: center;
+    color: white;
+    font-size: x-small;
+}
+footer > p {
+    padding: 3px 0px 3px 0px;
+}
+
+/*    mobile display    */
+@media only screen and (max-width:768px){
+    
+    section{
+        display: none;
+    }
+    body{
+        margin: 0;
+        width: 100%;
+    }
+    form.spicebowl{
+        flex-direction: column;
+        flex-flow:column wrap;
+    }
+    header > nav > ul{
+        display: flex;
+        flex-direction: column;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+    }
+    header > nav > ul > li {
+        color: rgb(110, 0, 110);
+        
+    }
+    article{
+        margin-top: 230px;
+    }
+    .line{
+        width: 100%;
+        height: 3px;
+        background-color: green;
+    }
+}
+
+
+
+/*    Tablet Display    */
+@media only screen and (max-width:1024px){
+    body{
+        margin: 0;
+        width: 100%;
+    }
+}
